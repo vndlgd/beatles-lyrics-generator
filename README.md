@@ -1,5 +1,9 @@
 # Lyrics-Generator
-Lyrics Generator using Python for SDSU Hackathon Project
+<b>Lyrics Generator using Python for SDSU Hackathon Project<br/><br/>
+Links to the Python files that were borrowed:<br/>
+https://github.com/kying18/graph-composer/blob/master/compose.py<br/>
+https://github.com/kying18/graph-composer/blob/master/graph.py<br/><br/>
+Not polished, but works functionally as proof of concept<br/>
 
 **Dependencies:**
 - lyricsgenius
