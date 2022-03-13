@@ -5,7 +5,7 @@ import lyricsgenius as lg
 import re
 
 # We retrieve data from the Genius API using the LyricsGenius python module
-api = lg.Genius('mG0s2LL-EdEB-YDZvpf3bE2WjXuDdple7riOw5cEn5T_zM8RsbXGPL5LyfgWwnMw',
+api = lg.Genius("my_access_token_here",
 		skip_non_songs=True, excluded_terms=["(Remix)", "(Live)"], remove_section_headers=True)
 
 # Write to file
