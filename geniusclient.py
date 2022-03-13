@@ -15,7 +15,7 @@ api = lg.Genius('mG0s2LL-EdEB-YDZvpf3bE2WjXuDdple7riOw5cEn5T_zM8RsbXGPL5LyfgWwnM
 
 def lyrics_scraper(genre):
 
-                # Create file if it does not exist using the touch() method
+    # Create file if it does not exist using the touch() method
     fle = Path("lyrics.txt")
     fle.touch(exist_ok=True)
     f = open(fle)
