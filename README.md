@@ -4,4 +4,4 @@ Lyrics Generator using Python for SDSU Hackathon Project
 **Dependencies:**
 - lyricsgenius
 - pyfiglet
-<img width="1076" alt="Screen Shot 2022-03-12 at 2 15 34 PM" src="https://user-images.githubusercontent.com/46804151/158036927-178568a2-b090-419a-918a-4215f427c2a1.png">
+<img width="1261" alt="Screen Shot 2022-03-12 at 10 33 41 PM" src="https://user-images.githubusercontent.com/46804151/158048180-c442395e-0ae7-469d-b8c9-20b136a78e0c.png">
