@@ -10,7 +10,7 @@ import re
 from pathlib import Path
 
 # We retrieve data from the Genius API using the LyricsGenius python module
-api = lg.Genius('Client_Access_Token_Goes_Here',
+api = lg.Genius('GsykqljGB1x6w9GOj68LVshlOVtz8EabEGofOzeQj4ygvJORSdaE56Yfx-wt_xwy',
                 skip_non_songs=True, verbose=False, excluded_terms=["(Remix)", "(Live)"], remove_section_headers=True)
 
 def lyrics_scraper(genre):
