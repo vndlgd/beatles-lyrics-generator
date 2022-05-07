@@ -16,6 +16,8 @@ html {
 }
 
 textarea {
+    width: 400px;
+    height: 250px;
     color: white;
     background-color: #2b2a33;
     border-style: solid;
@@ -23,12 +25,12 @@ textarea {
     border-radius: .25rem;
     border-color: #535A5D;
     line-height: inherit;
-    resize: vertical;
+    resize: vertical, horizontal;
     overflow: auto;
     box-sizing: border-box;
 }
 
-button {
+input[type=submit] {
     color: white;
     background-color: #18619d;
     padding-left: 1rem;
@@ -44,7 +46,11 @@ button {
     margin-bottom: 10px;
 }
 
-button:hover {
+input:hover {
     background-color: #22568d;
     color: #e8e6e3;
+}
+
+.output-statement {
+    color: white;
 }

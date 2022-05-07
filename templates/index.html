@@ -9,8 +9,14 @@
 
 <body class="homepage">
     <h1 class="title">Random Lyrics Generator</h1>
-    <textarea id="lyrics-input"></textarea>
-    <div><button>Generate new Lyrics</button></div>
+
+    <form action="{{ url_for('submit') }}" method="post">
+        <textarea name="text">{{ request.form['text'] }}</textarea>
+        <br>
+        <input type="submit" value="Generate new Lyrics">
+        <br>
+    </form>
+    <p class="output-statement">{{output}}</p>
 </body>
 
 </html>
