@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import generate
 
 app = Flask(__name__)
 
@@ -10,7 +11,11 @@ def index():
 
 @app.route("/", methods=["GET", "POST"])
 def submit():
-    output = "You entered: {}".format(request.form["text"])
+    input = request.form["text"]
+    lyrics = generate.get_words_from_text(input)
+    g = generate.make_graph(lyrics)
+    composition = generate.generate(g, lyrics, 100)
+    output = " ".join(composition)
     return render_template("index.html", output=output)
 
 
