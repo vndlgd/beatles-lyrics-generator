@@ -7,5 +7,40 @@
 }
 
 #lyrics-input {
-    color: #2b2a33;
+    width: 400px;
+    height: 250px;
+}
+
+textarea {
+    color: white;
+    background-color: #2b2a33;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: .25rem;
+    border-color: rgb(83, 90, 93);
+    line-height: inherit;
+    resize: vertical;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+button {
+    color: white;
+    background-color: #18619d;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-weight: 700;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    line-height: inherit;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #22568d;
+    color: #e8e6e3;
 }
