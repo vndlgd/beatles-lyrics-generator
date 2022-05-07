@@ -54,3 +54,8 @@ input:hover {
 .output-statement {
     color: white;
 }
+
+span {
+    width: 50%;
+    float: left;
+}
