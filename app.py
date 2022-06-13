@@ -11,10 +11,9 @@ def index():
 
 @app.route("/", methods=["GET", "POST"])
 def submit():
-    input = request.form["text"]
-    lyrics = generate.get_words_from_text(input)
+    lyrics = generate.get_words_from_text("lyrics/lyrics.txt")
     g = generate.make_graph(lyrics)
-    composition = generate.generate(g, lyrics, 100)
+    composition = generate.compose(g, lyrics, 100)
     output = " ".join(composition)
     return render_template("index.html", output=output)
 

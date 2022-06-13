@@ -2,12 +2,35 @@ html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+form {
+    display: inline-block;
+}
+
+.center {
+    transform: translateY(50%);
+}
+
 .homepage {
-    background-color: #171a1b;
+    text-align: center;
+    background-image: url(/static/abbey.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .title {
     color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #lyrics-input {
@@ -15,29 +38,24 @@ html {
     height: 250px;
 }
 
-textarea {
-    width: 400px;
-    height: 250px;
-    color: white;
-    background-color: #2b2a33;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: .25rem;
-    border-color: #535A5D;
-    line-height: inherit;
-    resize: vertical, horizontal;
-    overflow: auto;
-    box-sizing: border-box;
+footer {
+    position: absolute;
+    color: silver;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    white-space: nowrap;
 }
 
-input[type=submit] {
+button {
     color: white;
     background-color: #18619d;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-weight: 700;
+    font-size: 20px;
     border: none;
     border-radius: .25rem;
     cursor: pointer;
@@ -46,16 +64,18 @@ input[type=submit] {
     margin-bottom: 10px;
 }
 
-input:hover {
+button:hover {
     background-color: #22568d;
     color: #e8e6e3;
 }
 
 .output-statement {
     color: white;
+    width: 500px;
+    font-weight: normal;
+    overflow: hidden;
 }
 
 span {
     width: 50%;
-    float: left;
 }

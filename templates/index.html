@@ -3,20 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Random Lyrics Generator</title>
+    <title>Beatles Lyrics Generator</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body class="homepage">
-    <h1 class="title">Random Lyrics Generator</h1>
-
-    <form action="{{ url_for('submit') }}" method="post">
-        <textarea name="text">{{ request.form['text'] }}</textarea>
-        <br>
-        <input type="submit" value="Generate new Lyrics">
-        <br>
-    </form>
-    <p class="output-statement"><span>{{output}}</span></p>
+    <div class="center">
+        <h1 class="title">Beatles Lyrics Generator</h1>
+        <form method="POST">
+            <button type="button" onclick="return submit()">Generate New Song!</button>
+            <br>
+            <h2 class="output-statement"><span>{{output}}</span></h2>
+        </form>
+    </div>
+    <footer class="link">Beatles Lyrics Generator created by <a href="https://github.com/vndlgd/lyrics-generator">Ivan
+            Delgado</a>.</footer>
 </body>
 
 </html>
